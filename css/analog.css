@@ -1,0 +1,100 @@
+/* Reset some default styles */
+html, body {
+    font-size: 16px;
+    background-color: #aaa7a7;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Supply2';
+    letter-spacing: 0.1em;
+}
+
+@font-face {
+    font-family: supply1;
+    src: url(Mathieu-Desjardins_Supplymono-201216/SupplyMono-FreeForPersonalUse/Supply-Regular.otf);
+}
+
+@font-face {
+    font-family: supply2;
+    src: url(Mathieu-Desjardins_Supplymono-201216/SupplyMono-FreeForPersonalUse/Supply-Light.otf);
+}
+
+#page {
+    max-width: 940px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #D6D3D3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#logo img {
+    max-width: 45%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid rgb(48, 46, 46);
+    box-shadow: 5px 15px 12px;
+    border-radius: 5px;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 0 0 20px #000000;
+}
+
+li {
+    display: inline;
+    margin: 0 10px;
+    font-family: supply1;
+}
+
+/* Paragraph styling */
+p {
+    margin: 20px auto;
+    font-weight: normal;
+    line-height: 1.5;
+    display: flex; /* Make the images display horizontally */
+    justify-content: space-between; 
+    text-align: center;
+
+}
+
+p img {
+    max-width: 300px; /* Set a maximum width for the images */
+    height: 200px;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    transition: transform 0.5s;
+}
+
+p img:last-child {
+    margin-right: 0;
+}
+
+p img:hover{
+    transform: rotateY(20deg) scale(1.1);
+
+}
+/* Link styling */
+a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+a:hover, a.on {
+    color: #00ffff;
+    background-color: #fff;
+}
